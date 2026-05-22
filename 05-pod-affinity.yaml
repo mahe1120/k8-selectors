@@ -6,7 +6,7 @@ metadata:
     app-name: pod-1
 spec:
   containers:
-  - name: with-Pod-affinity
+  - name: with-pod-affinity
     image: registry.k8s.io/pause:3.8
 ---
 apiVersion: v1
@@ -27,5 +27,5 @@ spec:
             - pod-1
         topologyKey: topology.kubernetes.io/zone
   containers:
-  - name: with-Pod-affinity
+  - name: with-pod-affinity
     image: registry.k8s.io/pause:3.8
